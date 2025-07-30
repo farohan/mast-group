@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jute - MAST GROUP</title>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Resources/styles.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="mast-nav">
+      <div class="nav-container">
+        <a href="index.html" class="logo">MAST GROUP</a>
+        <nav class="main-nav">
+          <a href="About.html">About Us</a>
+          <div class="dropdown">
+            <button class="dropbtn">Products ▾</button>
+            <div class="dropdown-content">
+              <a href="Woven.html">Woven</a>
+              <a href="Knit.html">Knit</a>
+              <a href="Leather.html">Leather</a>
+              <a href="Jute.html">Jute</a>
+              <a href="WoodCraft.html">Wood Crafts</a>
+              <a href="Cane.html">Cane</a>
+            </div>
+          </div>
+          <a href="Contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="carousel">
+        <div class="carousel-slide active">
+          <img src="Resources/Images/Picture4.jpg" alt="Jute Banner" />
+          <div class="caption">
+            <h2>Jute</h2>
+            <p>Eco-friendly and durable jute products for sustainable living.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-center">
+        <h1>Jute Products Gallery</h1>
+        <div class="card-grid gallery-grid">
+          <div class="card gallery-item"><img src="Resources/Images/Jute/1.png" alt="Jute 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/2.png" alt="Jute 2" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/3.png" alt="Jute 3" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/4.png" alt="Jute 4" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/5.png" alt="Jute 5" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/6.png" alt="Jute 6" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/7.png" alt="Jute 7" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/8.png" alt="Jute 8" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/9.png" alt="Jute 9" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/10.png" alt="Jute 10" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/11.png" alt="Jute 11" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/12.png" alt="Jute 12" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/13.png" alt="Jute 13" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/14.png" alt="Jute 14" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/15.png" alt="Jute 15" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/16.png" alt="Jute 16" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/17.png" alt="Jute 17" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/18.png" alt="Jute 18" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/19.png" alt="Jute 19" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/20.png" alt="Jute 20" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/21.png" alt="Jute 21" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Jute/22.png" alt="Jute 22" onclick="openModal(this.src)" /></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mast-footer">
+      <p>© MAST GROUP. All rights reserved.</p>
+    </footer>
+
+    <div class="modal" id="modal" onclick="closeModal()">
+      <img id="modalImage" src="" alt="Modal" />
+    </div>
+
+    <script>
+      function openModal(src) {
+        document.getElementById('modalImage').src = src;
+        document.getElementById('modal').style.display = 'flex';
+      }
+      function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+      }
+    </script>
+  </div>
+</body>
+</html>
+
+

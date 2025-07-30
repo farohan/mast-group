@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAST GROUP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Resources/styles.css"/>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="mast-nav">
+      <div class="nav-container">
+        <a href="index.html" class="logo">MAST GROUP</a>
+        <nav class="main-nav">
+          <a href="About.html">About Us</a>
+          <div class="dropdown">
+            <button class="dropbtn">Products ▾</button>
+            <div class="dropdown-content">
+              <a href="Woven.html">Woven</a>
+              <a href="Knit.html">Knit</a>
+              <a href="Leather.html">Leather</a>
+              <a href="Jute.html">Jute</a>
+              <a href="WoodCraft.html">Wood Crafts</a>
+              <a href="Cane.html">Cane</a>
+            </div>
+          </div>
+          <a href="Contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Carousel -->
+      <section class="carousel">
+        <div class="carousel-wrapper">
+          <div class="carousel-slide fade">
+            <img src="Resources/Images/Picture1.jpg" alt="Knit">
+            <div class="caption"><h2>Knit</h2><p>Comfortable and stylish knitwear essentials.</p></div>
+          </div>
+          <div class="carousel-slide fade">
+            <img src="Resources/Images/Picture2.jpg" alt="Woven">
+            <div class="caption"><h2>Woven</h2><p>Intricate woven textiles for timeless elegance.</p></div>
+          </div>
+          <div class="carousel-slide fade">
+            <img src="Resources/Images/Picture3.jpg" alt="Leather">
+            <div class="caption"><h2>Leather</h2><p>Luxurious leather goods crafted with care.</p></div>
+          </div>
+          <div class="carousel-slide fade">
+            <img src="Resources/Images/Picture4.jpg" alt="Jute">
+            <div class="caption"><h2>Jute</h2><p>Eco-friendly and versatile jute products.</p></div>
+          </div>
+          <div class="carousel-slide fade">
+            <img src="Resources/Images/Picture5.jpg" alt="WoodCraft">
+            <div class="caption"><h2>Wood Crafts</h2><p>Handcrafted wooden excellence.</p></div>
+          </div>
+          <div class="carousel-slide fade">
+            <img src="Resources/Images/Picture6.jpg" alt="Cane">
+            <div class="caption"><h2>Cane</h2><p>Elegant and durable cane furnishings.</p></div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Cards -->
+      <section class="section-center">
+        <h1>Check out our products</h1>
+        <div class="card-grid">
+          <a href="Woven.html" class="card">Woven</a>
+          <a href="Knit.html" class="card">Knit</a>
+          <a href="Leather.html" class="card">Leather</a>
+          <a href="Jute.html" class="card">Jute</a>
+          <a href="WoodCraft.html" class="card">Wooden Craft</a>
+          <a href="Cane.html" class="card">Cane Crafts</a>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="section-center">
+        <h1>Why choose us</h1>
+        <div class="card-grid">
+          <div class="card large">100% Export <br> Quality Goods</div>
+          <div class="card large">Competitive <br> Pricing</div>
+          <div class="card large">Worldwide <br> Shipping</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mast-footer" id="contact">
+      <p>© MAST GROUP. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Carousel Script -->
+  <script>
+    let slideIndex = 1;
+    let slideTimer;
+
+    function showSlides(n) {
+      clearTimeout(slideTimer);
+      let i;
+      const slides = document.getElementsByClassName("carousel-slide");
+      const dots = document.getElementsByClassName("dot");
+      if (n > slides.length) slideIndex = 1;
+      if (n < 1) slideIndex = slides.length;
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      slideTimer = setTimeout(() => plusSlides(1), 5000);
+    }
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => showSlides(slideIndex));
+  </script>
+</body>
+</html>

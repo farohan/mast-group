@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Knit - MAST GROUP</title>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Resources/styles.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="mast-nav">
+      <div class="nav-container">
+        <a href="index.html" class="logo">MAST GROUP</a>
+        <nav class="main-nav">
+          <a href="About.html">About Us</a>
+          <div class="dropdown">
+            <button class="dropbtn">Products ▾</button>
+            <div class="dropdown-content">
+              <a href="Woven.html">Woven</a>
+              <a href="Knit.html">Knit</a>
+              <a href="Leather.html">Leather</a>
+              <a href="Jute.html">Jute</a>
+              <a href="WoodCraft.html">Wood Crafts</a>
+              <a href="Cane.html">Cane</a>
+            </div>
+          </div>
+          <a href="Contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="carousel">
+        <div class="carousel-slide active">
+          <img src="Resources/Images/Picture1.jpg" alt="Knit banner" />
+          <div class="caption">
+            <h2>Knit</h2>
+            <p>Explore our collection of comfortable and stylish knitwear essentials.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-center">
+        <h1>Knit Products Gallery</h1>
+        <div class="card-grid gallery-grid">
+          <div class="card gallery-item"><img src="Resources/Images/Knit/1.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/2.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/3.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/4.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/5.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/6.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/7.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/8.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/9.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/10.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/11.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/12.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/13.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/14.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/15.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/16.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/17.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/18.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/19.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/20.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/21.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/22.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Knit/23.png" alt="Knit 1" onclick="openModal(this.src)" /></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mast-footer">
+      <p>© MAST GROUP. All rights reserved.</p>
+    </footer>
+
+    <div class="modal" id="modal" onclick="closeModal()">
+      <img id="modalImage" src="" alt="Enlarged Product" />
+    </div>
+
+    <script>
+      function openModal(src) {
+        document.getElementById('modalImage').src = src;
+        document.getElementById('modal').style.display = 'flex';
+      }
+      function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+      }
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leather - MAST GROUP</title>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Resources/styles.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Navigation -->
+    <header class="mast-nav">
+      <div class="nav-container">
+        <a href="index.html" class="logo">MAST GROUP</a>
+        <nav class="main-nav">
+          <a href="About.html">About Us</a>
+          <div class="dropdown">
+            <button class="dropbtn">Products ▾</button>
+            <div class="dropdown-content">
+              <a href="Woven.html">Woven</a>
+              <a href="Knit.html">Knit</a>
+              <a href="Leather.html">Leather</a>
+              <a href="Jute.html">Jute</a>
+              <a href="WoodCraft.html">Wood Crafts</a>
+              <a href="Cane.html">Cane</a>
+            </div>
+          </div>
+          <a href="Contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <main>
+      <section class="carousel">
+        <div class="carousel-slide active">
+          <img src="Resources/Images/Picture3.jpg" alt="Leather Banner" />
+          <div class="caption">
+            <h2>Leather</h2>
+            <p>Luxurious leather goods crafted with precision and care.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="section-center">
+        <h1>Leather Products Gallery</h1>
+        <div class="card-grid gallery-grid">
+          <div class="card gallery-item"><img src="Resources/Images/Leather/1.png" alt="Leather 1" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/2.png" alt="Leather 2" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/3.png" alt="Leather 3" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/4.png" alt="Leather 4" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/5.png" alt="Leather 5" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/6.png" alt="Leather 6" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/7.png" alt="Leather 7" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/8.png" alt="Leather 8" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/9.png" alt="Leather 9" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/10.png" alt="Leather 10" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/11.png" alt="Leather 11" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/12.png" alt="Leather 12" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/13.png" alt="Leather 13" onclick="openModal(this.src)" /></div>
+          <div class="card gallery-item"><img src="Resources/Images/Leather/14.png" alt="Leather 14" onclick="openModal(this.src)" /></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mast-footer">
+      <p>© MAST GROUP. All rights reserved.</p>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="modal" id="modal" onclick="closeModal()">
+      <img id="modalImage" src="" alt="Modal" />
+    </div>
+
+    <!-- Modal Script -->
+    <script>
+      function openModal(src) {
+        document.getElementById('modalImage').src = src;
+        document.getElementById('modal').style.display = 'flex';
+      }
+      function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+      }
+    </script>
+  </div>
+</body>
+</html>
